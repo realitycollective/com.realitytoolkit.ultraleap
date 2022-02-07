@@ -13,7 +13,6 @@ The Ultraleap platform components for the [Reality Toolkit](https://github.com/r
 ## Requirements
 
 - [RealityToolkit.Core](https://github.com/realitycollective/com.realitytoolkit.core)
-- [RealityToolkit.SDK](https://github.com/realitycollective/com.realitytoolkit.sdk)
 - [Unity 2020.3 and above](https://unity.com/)
 
 ## Getting Started
