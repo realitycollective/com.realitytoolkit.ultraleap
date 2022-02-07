@@ -1,12 +1,25 @@
-# Ultraleap
+# Reality Toolkit - Ultraleap Platform Module
 
-The Ultraleap platform components for the [XRTK - Mixed Reality Toolkit](https://github.com/XRTK/XRTK-Core).
+The Ultraleap platform components for the [Reality Toolkit](https://github.com/realitycollective/com.realitytoolkit.core). This package enables your Reality Toolkit based project to run on Ultraleap devices.
 
-[![openupm](https://img.shields.io/npm/v/com.xrtk.ultraleap?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.xrtk.ultraleap/)
+## What's included?
 
-## Build Status
+- Data Providers for the Input System
 
-| branch | build status |
-| --- | --- |
-| main | [![main](https://github.com/XRTK/com.xrtk.ultraleap/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/XRTK/com.xrtk.ultraleap/actions/workflows/build.yml) |
-| development | [![development](https://github.com/XRTK/com.xrtk.ultraleap/actions/workflows/build.yml/badge.svg?branch=development)](https://github.com/XRTK/com.xrtk.ultraleap/actions/workflows/build.yml) |
+## Supported Devices
+
+- Leap Motion Controller
+
+## Requirements
+
+- [RealityToolkit.Core](https://github.com/realitycollective/com.realitytoolkit.core)
+- [RealityToolkit.SDK](https://github.com/realitycollective/com.realitytoolkit.sdk)
+- [Unity 2020.3 and above](https://unity.com/)
+
+## Getting Started
+
+### OpenUPM
+
+The simplest way to getting started using the Ultraleap platform package in your project is via OpenUPM. Visit [OpenUPM](https://openupm.com/docs/) to learn more about it. Once you have the OpenUPM CLI set up use the following command to add the package to your project:
+
+`openupm add com.realitytoolkit.ultraleap`
