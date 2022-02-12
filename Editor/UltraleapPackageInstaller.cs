@@ -13,36 +13,31 @@ namespace XRTK.Ultraleap.Editor
     internal static class UltraleapPackageInstaller
     {
         private static readonly string DefaultPath = $"{MixedRealityPreferences.ProfileGenerationPath}Ultraleap";
-        private static readonly string HiddenPath = Path.GetFullPath($"{PathFinderUtility.ResolvePath<IPathFinder>(typeof(UltraleapPathFinder)).BackSlashes()}{Path.DirectorySeparatorChar}{MixedRealityPreferences.HIDDEN_PROFILES_PATH}");
+        private static readonly string HiddenPath = Path.GetFullPath($"{PathFinderUtility.ResolvePath<IPathFinder>(typeof(UltraleapPathFinder)).BackSlashes()}{Path.DirectorySeparatorChar}{MixedRealityPreferences.HIDDEN_PACKAGE_ASSETS_PATH}");
 
         static UltraleapPackageInstaller()
         {
-            if (!EditorPreferences.Get($"{nameof(UltraleapPackageInstaller)}", false))
-            {
-                EditorPreferences.Set($"{nameof(UltraleapPackageInstaller)}", PackageInstaller.TryInstallAssets(HiddenPath, DefaultPath));
-            }
-
             EditorApplication.delayCall += CheckPackage;
         }
 
-        [MenuItem("Mixed Reality Toolkit/Packages/Install Ultraleap Package Assets...", true)]
+        [MenuItem("Reality Toolkit/Packages/Install Ultraleap Package Assets...", true)]
         private static bool ImportPackageAssetsValidation()
         {
-            return !Directory.Exists($"{DefaultPath}{Path.DirectorySeparatorChar}Profiles");
+            return !Directory.Exists($"{DefaultPath}{Path.DirectorySeparatorChar}");
         }
 
-        [MenuItem("Mixed Reality Toolkit/Packages/Install Ultraleap Package Assets...")]
+        [MenuItem("Reality Toolkit/Packages/Install Ultraleap Package Assets...")]
         private static void ImportPackageAssets()
         {
-            EditorPreferences.Set($"{nameof(UltraleapPackageInstaller)}.Profiles", false);
+            EditorPreferences.Set($"{nameof(UltraleapPackageInstaller)}.Assets", false);
             EditorApplication.delayCall += CheckPackage;
         }
 
         private static void CheckPackage()
         {
-            if (!EditorPreferences.Get($"{nameof(UltraleapPackageInstaller)}.Profiles", false))
+            if (!EditorPreferences.Get($"{nameof(UltraleapPackageInstaller)}.Assets", false))
             {
-                EditorPreferences.Set($"{nameof(UltraleapPackageInstaller)}.Profiles", PackageInstaller.TryInstallAssets(HiddenPath, $"{DefaultPath}{Path.DirectorySeparatorChar}Profiles"));
+                EditorPreferences.Set($"{nameof(UltraleapPackageInstaller)}.Assets", PackageInstaller.TryInstallAssets(HiddenPath, DefaultPath));
             }
         }
     }
