@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using UnityEditor;
 using UnityEngine;
+using XRTK.Editor;
 using XRTK.Editor.Utilities;
 using XRTK.Extensions;
 
@@ -147,10 +148,10 @@ namespace XRTK.Ultraleap.Editor
             x64Importer.SaveAndReimport();
         }
 
-        [MenuItem("Mixed Reality Toolkit/Tools/Ultraleap/Reimport Plugins", true)]
+        [MenuItem(MixedRealityPreferences.Editor_Menu_Keyword + "/Tools/Ultraleap/Reimport Plugins", true)]
         private static bool UpdatePluginValidation() => Directory.Exists(NativeRootPath);
 
-        [MenuItem("Mixed Reality Toolkit/Tools/Ultraleap/Reimport Plugins", false)]
+        [MenuItem(MixedRealityPreferences.Editor_Menu_Keyword + "/Tools/Ultraleap/Reimport Plugins", false)]
         private static void UpdatePlugins()
         {
             if (EditorUtility.DisplayDialog("Attention!",
