@@ -18,7 +18,7 @@ using XRTK.Services;
 using XRTK.Services.InputSystem.Controllers.Hands;
 using XRTK.Ultraleap.Definitions;
 using XRTK.Ultraleap.Extensions;
-using XRTK.Ultraleap.Profiles;
+using XRTK.Ultraleap.InputSystem.Profiles;
 using XRTK.Utilities;
 
 namespace XRTK.Ultraleap.InputSystem.Controllers
