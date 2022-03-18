@@ -20,13 +20,13 @@ namespace XRTK.Ultraleap.Editor
             EditorApplication.delayCall += CheckPackage;
         }
 
-        [MenuItem("Reality Toolkit/Packages/Install Ultraleap Package Assets...", true)]
+        [MenuItem(MixedRealityPreferences.Editor_Menu_Keyword + "/Packages/Install Ultraleap Package Assets...", true)]
         private static bool ImportPackageAssetsValidation()
         {
             return !Directory.Exists($"{DefaultPath}{Path.DirectorySeparatorChar}");
         }
 
-        [MenuItem("Reality Toolkit/Packages/Install Ultraleap Package Assets...")]
+        [MenuItem(MixedRealityPreferences.Editor_Menu_Keyword + "/Packages/Install Ultraleap Package Assets...")]
         private static void ImportPackageAssets()
         {
             EditorPreferences.Set($"{nameof(UltraleapPackageInstaller)}.Assets", false);

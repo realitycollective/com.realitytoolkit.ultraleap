@@ -6,7 +6,7 @@ using UnityEngine;
 using XRTK.Editor.Extensions;
 using XRTK.Editor.Profiles.InputSystem.Controllers;
 using XRTK.Ultraleap.Definitions;
-using XRTK.Ultraleap.Profiles;
+using XRTK.Ultraleap.InputSystem.Profiles;
 
 namespace XRTK.Ultraleap.Editor.Inspectors
 {

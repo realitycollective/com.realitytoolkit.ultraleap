@@ -14,14 +14,14 @@ using XRTK.Definitions.Utilities;
 using XRTK.Extensions;
 using XRTK.Interfaces.CameraSystem;
 using XRTK.Interfaces.InputSystem;
-using XRTK.Providers.Controllers.Hands;
 using XRTK.Services;
+using XRTK.Services.InputSystem.Controllers.Hands;
 using XRTK.Ultraleap.Definitions;
 using XRTK.Ultraleap.Extensions;
-using XRTK.Ultraleap.Profiles;
+using XRTK.Ultraleap.InputSystem.Profiles;
 using XRTK.Utilities;
 
-namespace XRTK.Ultraleap.Providers.Controllers
+namespace XRTK.Ultraleap.InputSystem.Controllers
 {
     /// <summary>
     /// Enables the XRTK hand tracking implementation to run powered by Ultraleap hand tracking

@@ -6,7 +6,7 @@ using XRTK.Definitions.Controllers.Hands;
 using XRTK.Definitions.Utilities;
 using XRTK.Ultraleap.Definitions;
 
-namespace XRTK.Ultraleap.Profiles
+namespace XRTK.Ultraleap.InputSystem.Profiles
 {
     /// <summary>
     /// Configuration profile for the <see cref="Providers.Controllers.UltraleapHandControllerDataProvider"/> powering
