@@ -21,7 +21,7 @@ using XRTK.Ultraleap.Extensions;
 using XRTK.Ultraleap.Profiles;
 using XRTK.Utilities;
 
-namespace XRTK.Ultraleap.Providers.Controllers
+namespace XRTK.Ultraleap.InputSystem.Controllers
 {
     /// <summary>
     /// Enables the XRTK hand tracking implementation to run powered by Ultraleap hand tracking
