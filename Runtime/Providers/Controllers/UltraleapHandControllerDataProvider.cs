@@ -4,24 +4,24 @@
 using Leap;
 using System;
 using System.Collections.Generic;
+using RealityToolkit.Attributes;
+using RealityToolkit.Definitions.Controllers.Hands;
+using RealityToolkit.Definitions.Devices;
+using RealityToolkit.Definitions.InputSystem;
+using RealityToolkit.Definitions.Platforms;
+using RealityToolkit.Definitions.Utilities;
+using RealityToolkit.Interfaces.CameraSystem;
+using RealityToolkit.Interfaces.InputSystem;
+using RealityToolkit.Services;
+using RealityToolkit.Services.InputSystem.Controllers.Hands;
+using RealityToolkit.Ultraleap.Definitions;
+using RealityToolkit.Ultraleap.InputSystem.Profiles;
+using RealityToolkit.Utilities;
 using UnityEngine;
-using XRTK.Attributes;
-using XRTK.Definitions.Controllers.Hands;
-using XRTK.Definitions.Devices;
-using XRTK.Definitions.InputSystem;
-using XRTK.Definitions.Platforms;
-using XRTK.Definitions.Utilities;
-using XRTK.Extensions;
-using XRTK.Interfaces.CameraSystem;
-using XRTK.Interfaces.InputSystem;
-using XRTK.Services;
-using XRTK.Services.InputSystem.Controllers.Hands;
-using XRTK.Ultraleap.Definitions;
-using XRTK.Ultraleap.Extensions;
-using XRTK.Ultraleap.InputSystem.Profiles;
-using XRTK.Utilities;
+using RealityToolkit.Extensions;
+using RealityToolkit.Ultraleap.Extensions;
 
-namespace XRTK.Ultraleap.InputSystem.Controllers
+namespace RealityToolkit.Ultraleap.InputSystem.Controllers
 {
     /// <summary>
     /// Enables the XRTK hand tracking implementation to run powered by Ultraleap hand tracking
