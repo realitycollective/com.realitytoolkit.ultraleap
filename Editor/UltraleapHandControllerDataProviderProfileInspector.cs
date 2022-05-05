@@ -1,14 +1,14 @@
 ﻿// Copyright (c) XRTK. All rights reserved.
 // Licensed under the MIT License. See LICENSE in the project root for license information.
 
+using RealityToolkit.Editor.Extensions;
+using RealityToolkit.Editor.Profiles.InputSystem.Controllers;
+using RealityToolkit.Ultraleap.Definitions;
+using RealityToolkit.Ultraleap.InputSystem.Profiles;
 using UnityEditor;
 using UnityEngine;
-using XRTK.Editor.Extensions;
-using XRTK.Editor.Profiles.InputSystem.Controllers;
-using XRTK.Ultraleap.Definitions;
-using XRTK.Ultraleap.InputSystem.Profiles;
 
-namespace XRTK.Ultraleap.Editor.Inspectors
+namespace RealityToolkit.Ultraleap.Editor.Inspectors
 {
     /// <summary>
     /// Default inspector for the <see cref="UltraleapHandControllerDataProviderProfile"/> asset.

@@ -1,7 +1,7 @@
 ﻿// Copyright (c) XRTK. All rights reserved.
 // Licensed under the MIT License. See LICENSE in the project root for license information.
 
-namespace XRTK.Ultraleap.Definitions
+namespace RealityToolkit.Ultraleap.Definitions
 {
     /// <summary>
     /// Supported operation modes for the Ultraleap device.

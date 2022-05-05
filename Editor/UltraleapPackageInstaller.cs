@@ -2,12 +2,12 @@
 // Licensed under the MIT License. See LICENSE in the project root for license information.
 
 using System.IO;
+using RealityToolkit.Editor;
+using RealityToolkit.Editor.Utilities;
 using UnityEditor;
-using XRTK.Editor;
-using XRTK.Editor.Utilities;
-using XRTK.Extensions;
+using RealityToolkit.Extensions;
 
-namespace XRTK.Ultraleap.Editor
+namespace RealityToolkit.Ultraleap.Editor
 {
     [InitializeOnLoad]
     internal static class UltraleapPackageInstaller

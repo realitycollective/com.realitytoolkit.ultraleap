@@ -4,7 +4,7 @@
 using Leap;
 using UnityEngine;
 
-namespace XRTK.Ultraleap.Extensions
+namespace RealityToolkit.Ultraleap.Extensions
 {
     /// <summary>
     /// Ultraleap platform specific <see cref="Quaternion"/> extensions.

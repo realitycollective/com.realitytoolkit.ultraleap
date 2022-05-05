@@ -3,13 +3,13 @@
 
 using System.IO;
 using System.Linq;
+using RealityToolkit.Editor;
+using RealityToolkit.Editor.Utilities;
 using UnityEditor;
 using UnityEngine;
-using XRTK.Editor;
-using XRTK.Editor.Utilities;
-using XRTK.Extensions;
+using RealityToolkit.Extensions;
 
-namespace XRTK.Ultraleap.Editor
+namespace RealityToolkit.Ultraleap.Editor
 {
     [InitializeOnLoad]
     public static class UltraleapPluginUtility
