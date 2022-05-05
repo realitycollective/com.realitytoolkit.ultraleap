@@ -28,7 +28,6 @@ namespace RealityToolkit.Ultraleap.InputSystem.Controllers
     /// sensors, like e.g. the Leap Motion device, by providing <see cref="HandData"/> to the
     /// <see cref="MixedRealityHandController"/>.
     /// </summary>
-    [RuntimePlatform(typeof(UniversalWindowsPlatform))]
     [RuntimePlatform(typeof(WindowsStandalonePlatform))]
     [System.Runtime.InteropServices.Guid("61cec407-ffa4-4a5c-b96a-5229348f85c2")]
     public class UltraleapHandControllerDataProvider : BaseHandControllerDataProvider
@@ -51,9 +50,9 @@ namespace RealityToolkit.Ultraleap.InputSystem.Controllers
 
             if (MixedRealityToolkit.TryGetSystemProfile<IMixedRealityInputSystem, MixedRealityInputSystemProfile>(out var globalSettingsProfile))
             {
-                gripThreshold = profile.GripThreshold != globalSettingsProfile.GripThreshold
+                gripThreshold = profile.GripThreshold != globalSettingsProfile.HandControllerSettings.GripThreshold
                     ? profile.GripThreshold
-                    : globalSettingsProfile.GripThreshold;
+                    : globalSettingsProfile.HandControllerSettings.GripThreshold;
             }
             else
             {
