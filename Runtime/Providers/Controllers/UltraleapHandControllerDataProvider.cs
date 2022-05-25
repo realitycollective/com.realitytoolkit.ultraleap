@@ -2,8 +2,8 @@
 // Licensed under the MIT License. See LICENSE in the project root for license information.
 
 using Leap;
-using System;
-using System.Collections.Generic;
+using RealityCollective.Definitions.Utilities;
+using RealityCollective.Extensions;
 using RealityToolkit.Attributes;
 using RealityToolkit.Definitions.Controllers.Hands;
 using RealityToolkit.Definitions.Devices;
@@ -15,11 +15,12 @@ using RealityToolkit.Interfaces.InputSystem;
 using RealityToolkit.Services;
 using RealityToolkit.Services.InputSystem.Controllers.Hands;
 using RealityToolkit.Ultraleap.Definitions;
+using RealityToolkit.Ultraleap.Extensions;
 using RealityToolkit.Ultraleap.InputSystem.Profiles;
 using RealityToolkit.Utilities;
+using System;
+using System.Collections.Generic;
 using UnityEngine;
-using RealityToolkit.Extensions;
-using RealityToolkit.Ultraleap.Extensions;
 
 namespace RealityToolkit.Ultraleap.InputSystem.Controllers
 {
