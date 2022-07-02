@@ -12,7 +12,7 @@ namespace RealityToolkit.Ultraleap.InputSystem.Profiles
     /// Configuration profile for the <see cref="Providers.Controllers.UltraleapHandControllerDataProvider"/> powering
     /// the <see cref="RealityToolkit.Providers.Controllers.Hands.MixedRealityHandController"/>.
     /// </summary>
-    [CreateAssetMenu(menuName = "Mixed Reality Toolkit/Input System/Controller Data Providers/Ultraleap Hand", fileName = "UltraleapHandControllerDataProviderProfile", order = (int)CreateProfileMenuItemIndices.Input)]
+    [CreateAssetMenu(menuName = "Reality Toolkit/Input System/Controller Data Providers/Ultraleap Hand", fileName = "UltraleapHandControllerDataProviderProfile", order = (int)CreateProfileMenuItemIndices.Input)]
     public class UltraleapHandControllerDataProviderProfile : BaseHandControllerDataProviderProfile
     {
         [SerializeField]
